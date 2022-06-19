@@ -1,0 +1,22 @@
+[2021-12-11 23:30:21][INFO][tid:1000][main:9]open file clientlog for log
+[2021-12-11 23:30:21][TRACE][tid:1000][main:12]create pthread for writing log
+[2021-12-11 23:30:21][INFO][tid:1000][Client:66]create client without initialization
+[2021-12-11 23:30:21][TRACE][tid:1000][Writejs:92]create new DISTRIBUTION_REQUEST json data
+[2021-12-11 23:30:21][INFO][tid:1000][DistributionRequest:320]--connection to master starts--
+[2021-12-11 23:30:21][TRACE][tid:1000][ConnectServ:120]connect once
+[2021-12-11 23:30:21][INFO][tid:1000][DistributionRequest:334]--connection to master done--
+[2021-12-11 23:30:21][TRACE][tid:1000][WriteData:165]write data once
+[2021-12-11 23:30:21][INFO][tid:1000][DistributionRequest:336]--send distribution resquest to master--
+[2021-12-11 23:30:21][TRACE][tid:1000][ReadData:142]read data success
+[2021-12-11 23:30:21][VERBOSE][tid:1000][ReadData:152]json data : pž²íÿ
+[2021-12-11 23:41:08][INFO][tid:1000][main:9]open file clientlog for log
+[2021-12-11 23:41:08][TRACE][tid:1000][main:12]create pthread for writing log
+[2021-12-11 23:41:08][INFO][tid:1000][Client:66]create client without initialization
+[2021-12-11 23:41:08][TRACE][tid:1000][Writejs:92]create new DISTRIBUTION_REQUEST json data
+[2021-12-11 23:41:08][INFO][tid:1000][DistributionRequest:320]--connection to master starts--
+[2021-12-11 23:41:08][TRACE][tid:1000][ConnectServ:120]connect once
+[2021-12-11 23:41:08][INFO][tid:1000][DistributionRequest:334]--connection to master done--
+[2021-12-11 23:41:08][TRACE][tid:1000][WriteData:165]write data once
+[2021-12-11 23:41:08][INFO][tid:1000][DistributionRequest:336]--send distribution resquest to master--
+[2021-12-11 23:41:09][TRACE][tid:1000][ReadData:142]read data success
+[2021-12-11 23:41:09][VERBOSE][tid:1000][ReadData:152]json data : pÎéòÿ

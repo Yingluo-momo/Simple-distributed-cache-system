@@ -1,0 +1,22 @@
+必要引用：
+#include "logfile.hpp"
+#include <pthread.h>
+
+主程序开头添加:
+LogFile logfile;
+logfile.OpenLogFile("日志目录");
+pthread_t log_consumer_thread_id;
+pthread_create(&log_consumer_thread_id,NULL,LogFile::LogFileConsumer,&logfile);
+主程序结尾添加：
+pthread_join(log_consumer_thread_id,NULL);
+
+使用日志的线程需添加参数(void* arg1)//传入时传(&logfile)
+使用日志的线程开头添加LogFile* arg = (LogFile*)arg1;
+使用例子arg->LogInfo("id=%d, gg=%d,hh=%d,ff=%s",index,12,10,"sdfa");//参照printf
+
+
+如果找不到pthread之类的东西：
+cmakelist末尾添加：
+set(THREADS_PREFER_PTHREAD_FLAG ON)
+find_package(Threads REQUIRED)
+target_link_libraries(你的out文件名 PUBLIC Threads::Threads)
